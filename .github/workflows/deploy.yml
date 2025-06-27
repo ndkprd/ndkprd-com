@@ -38,7 +38,7 @@ jobs:
           git checkout -B production
           if [ -d output ]; then
             git add output
-            git commit -m "Update output directory for production" || echo "Nothing to commit"
+            git commit -m "deploy: deploy to production" || echo "Nothing to commit"
             git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
             git push --force origin production
           else
