@@ -1,0 +1,20 @@
+---
+
+web_favicon_url: assets/ndkprd.png
+web_profile_image_url: assets/ndkprd.png
+web_headline: Hi, Andhika here.
+web_descriptions:
+  - "I'm a DevOps and automation enthusiast who's currently working as a Network Security Engineer at transportation and logistic company in Indonesia."
+  - "Feel free to connect with me below! I'm always open to discussions and new opportunities."
+web_footer: © 2025 ndkprd"
+web_links:
+  - name: blog
+    url: https://blog.ndkprd.com
+  - name: github
+    url: https://github.com/ndkprd
+  - name: linkedin
+    url: https://linkedin.com/in/ndkprd
+  - name: twitter
+    url: https://twitter.com/ndkprd
+  - name: instagram
+    url: https://instagram.com/ndkprd
