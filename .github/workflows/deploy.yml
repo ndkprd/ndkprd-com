@@ -31,6 +31,11 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin production || true
           git checkout -B production
-          git add output
-          git commit -m "Update output directory for production" || echo "Nothing to commit"
-          git push --force origin production
+          if [ -d output ]; then
+            git add output
+            git commit -m "Update output directory for production" || echo "Nothing to commit"
+            git push --force origin production
+          else
+            echo "output directory does not exist, nothing to push"
+            exit 1
+          fi

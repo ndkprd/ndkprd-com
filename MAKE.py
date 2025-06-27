@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 
 # Paths
 SRC_DIR = 'src'
-OUTPUT_DIR = '.output'
+OUTPUT_DIR = 'output'
 ASSETS_DIR = os.path.join(SRC_DIR, 'assets')
 OUTPUT_ASSETS_DIR = os.path.join(OUTPUT_DIR, 'assets')
 CONFIG_FILE = 'config.yaml'
