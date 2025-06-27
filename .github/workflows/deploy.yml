@@ -25,14 +25,12 @@ jobs:
       - name: Build site
         run: python MAKE.py
 
-      - name: Push output to production branch
+      - name: Push to production branch (with output directory)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin production || true
-          git switch --orphan production
-          git rm -rf .
-          cp -r output/* .
-          git add .
-          git commit -m "Deploy to production branch" || echo "Nothing to commit"
+          git checkout -B production
+          git add output
+          git commit -m "Update output directory for production" || echo "Nothing to commit"
           git push --force origin production
