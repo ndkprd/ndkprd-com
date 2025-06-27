@@ -28,7 +28,7 @@ jobs:
       - name: Build site
         run: python MAKE.py
 
-      - name: Push to production branch (with output directory)
+      - name: Push to production branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
