@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #181a1b;
+  color: #f3f3f3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.card {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 40px 30px 40px;
+  margin: 10px;
+  gap: 40px;
+  align-items: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 260px;
+}
+
+.profile-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.30);
+  margin-bottom: 16px;
+}
+
+.info-section {
+  max-width: 420px;
+}
+
+.info-section h1 {
+  font-size: 2rem;
+  margin: 0 0 18px 0;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+}
+
+.info-section p {
+  font-size: 1.18rem;
+  margin: 0 15px 15px 0;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
+
+.links {
+  margin: 0 10px 10px 0;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 4px;
+  white-space: nowrap;
+  justify-content: flex-start;
+}
+
+.links a {
+  color: #8ab4f8;
+  text-decoration: underline;
+  margin: 0 2px;
+  transition: color 0.2s;
+  white-space: nowrap;
+  font-size: inherit;
+}
+
+.links a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  color: #b0b3b8;
+  font-size: 0.8rem;
+  opacity: 0.75;
+  margin-top: auto;
+  padding-bottom: 18px;
+  padding-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .card {
+    padding: 18px 2vw 12px 2vw;
+    gap: 10px;
+    min-width: unset;
+    background: #181a1b;
+    box-shadow: none;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .profile-section {
+    min-width: 0;
+  }
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+  .info-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .info-section h1 {
+    /* font-size: 1.3rem; */
+    text-align: center;
+  }
+  .info-section p {
+    /* font-size: 1rem; */
+    text-align: center;
+  }
+  .links {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    /* font-size: 0.93rem; */
+    justify-content: center;
+    gap: 2px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  .card {
+    max-width: 420px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
